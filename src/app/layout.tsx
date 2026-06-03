@@ -3,7 +3,7 @@ import { DM_Serif_Display, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import WhatsAppButton from "@/components/layout/WhatsAppButton";
+
 import PageTransition from "@/components/layout/PageTransition";
 
 const dmSerifDisplay = DM_Serif_Display({
@@ -61,7 +61,7 @@ export default function RootLayout({
         <Navbar />
         <PageTransition>{children}</PageTransition>
         <Footer />
-        <WhatsAppButton />
+
       </body>
     </html>
   );

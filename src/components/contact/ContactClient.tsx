@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { PROJECT_TYPES } from "@/lib/constants";
 
 export default function ContactClient() {
@@ -12,7 +13,7 @@ export default function ContactClient() {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const router = useRouter();
 
   const [focused, setFocused] = useState<Record<string, boolean>>({});
 
@@ -31,9 +32,8 @@ export default function ContactClient() {
     e.preventDefault();
     setIsSubmitting(true);
     setTimeout(() => {
-      setIsSubmitted(true);
-      setIsSubmitting(false);
-    }, 1500);
+      router.push("/contact/thank-you");
+    }, 1000);
   };
 
   const isLabelUp = (field: string) =>
@@ -73,32 +73,6 @@ export default function ContactClient() {
       />
     </div>
   );
-
-  if (isSubmitted) {
-    return (
-      <div className="flex flex-col items-center justify-center py-20 text-center">
-        <div className="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center mb-6">
-          <svg
-            className="w-10 h-10 text-green-500"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2.5}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M5 13l4 4L19 7"
-            />
-          </svg>
-        </div>
-        <h3 className="font-serif text-3xl text-navy mb-3">Message Sent!</h3>
-        <p className="text-navy-100 text-lg">
-          We&apos;ll get back to you within 24 hours.
-        </p>
-      </div>
-    );
-  }
 
   return (
     <form onSubmit={handleSubmit}>
