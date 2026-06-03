@@ -101,7 +101,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     >
                       <path
                         d="M13.333 4L6 11.333 2.667 8"
-                        stroke="#2563EB"
+                        stroke="#2873C3"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
