@@ -1,0 +1,52 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p public/projects)",
+      "Bash(cwebp -q 80 '__TRACKED_VAR__/Portfolio/Aetas Residence/Aetas-25.jpg' -o public/projects/aetas-residence.webp)",
+      "Bash(cwebp -q 90 __TRACKED_VAR__/Logo/Logo.jpg -o public/logo.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 \"Centrid Assets/drive-download-20260525T142738Z-3-001/Portfolio/Aetas Residence/Aetas-41.jpg\" -o public/hero-home.webp)",
+      "Bash(awk '{printf \"%d KB\\\\n\", $1/1024}')",
+      "Bash(echo \"Dev server starting... PID: $!\")",
+      "WebFetch(domain:cubebeedesign.com.my)",
+      "Bash(mkdir -p \"/Users/weichernlim/Documents/Portfolio/Centrid Design-Premium/src/app/portfolio/[id]\")",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Aetas Residence/Aetas-1.jpg' -o public/projects/aetas-residence/1.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Aetas Residence/Aetas-7.jpg' -o public/projects/aetas-residence/2.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Aetas Residence/Aetas-12.jpg' -o public/projects/aetas-residence/3.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Aetas Residence/Aetas-25.jpg' -o public/projects/aetas-residence/4.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Aetas Residence/Aetas-35.jpg' -o public/projects/aetas-residence/5.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Mont Kiara Damai/DamaiResort-1.jpg' -o public/projects/mont-kiara-damai/1.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Mont Kiara Damai/DamaiResort-4.jpg' -o public/projects/mont-kiara-damai/2.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Mont Kiara Damai/DamaiResort-8.jpg' -o public/projects/mont-kiara-damai/3.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Mont Kiara Damai/DamaiResort-22.jpg' -o public/projects/mont-kiara-damai/4.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Mont Kiara Damai/DamaiResort-33.jpg' -o public/projects/mont-kiara-damai/5.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Park Place Desa Park City/Foyer.jpg' -o public/projects/park-place-desa-park-city/1.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Park Place Desa Park City/Master Bedroom.jpg' -o public/projects/park-place-desa-park-city/2.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Park Place Desa Park City/Guest Bedroom.jpg' -o public/projects/park-place-desa-park-city/3.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Park Place Desa Park City/TV.jpg' -o public/projects/park-place-desa-park-city/4.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Park Place Desa Park City/Altar.jpg' -o public/projects/park-place-desa-park-city/5.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Eco Ardence Amber/Coffee.jpg' -o public/projects/eco-ardence-amber/1.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Eco Ardence Amber/Coffee 2.jpg' -o public/projects/eco-ardence-amber/2.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Eco Ardence Amber/Kids Room.jpg' -o public/projects/eco-ardence-amber/3.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Eco Ardence Amber/Kids Room 3.jpg' -o public/projects/eco-ardence-amber/4.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Eco Ardence Amber/Spa Room.jpg' -o public/projects/eco-ardence-amber/5.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Regent Residence/Living Sofa.jpg' -o public/projects/regent-residence/1.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Regent Residence/Living TV.jpg' -o public/projects/regent-residence/2.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Regent Residence/Dining.jpg' -o public/projects/regent-residence/3.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Regent Residence/Dining 2.jpg' -o public/projects/regent-residence/4.webp)",
+      "Bash(cwebp -q 80 -resize 1920 0 '__TRACKED_VAR__/Regent Residence/Kitchen.jpg' -o public/projects/regent-residence/5.webp)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3003/portfolio/aetas-residence)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3002/portfolio/aetas-residence)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3002/about)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3002/contact)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3002)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3002/portfolio)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3002/partnership)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" -L http://localhost:3002/partnership)",
+      "Bash(identify \"/Users/weichernlim/Documents/Portfolio/Centrid Design-Premium/public/logo.png\")",
+      "Bash(convert \"/Users/weichernlim/Documents/Portfolio/Centrid Design-Premium/public/logo.png\" -fuzz 15% -transparent white -trim +repage \"/Users/weichernlim/Documents/Portfolio/Centrid Design-Premium/public/logo-transparent.png\")"
+    ],
+    "additionalDirectories": [
+      "/Users/weichernlim/Documents/Portfolio/Centrid Design-Premium/src/app/portfolio"
+    ]
+  }
+}
