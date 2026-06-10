@@ -102,7 +102,7 @@ function Lightbox({
 export default function ProjectDetailClient({ project, nextProject, prevProject }: Props) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
-  const allImages = [project.image, ...project.gallery];
+  const allImages = project.gallery;
 
   const openLightbox = (idx: number) => setLightboxIndex(idx);
   const closeLightbox = () => setLightboxIndex(null);
