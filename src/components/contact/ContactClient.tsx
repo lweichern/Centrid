@@ -2,14 +2,17 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { PROJECT_TYPES } from "@/lib/constants";
+import { PROJECT_TYPES, DESIGN_THEMES } from "@/lib/constants";
 
 export default function ContactClient() {
   const [form, setForm] = useState({
     name: "",
     email: "",
     phone: "",
+    projectName: "",
     projectType: "",
+    designTheme: "",
+    budget: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -79,6 +82,7 @@ export default function ContactClient() {
       {renderFloatingField("name", "Full Name", "text", true)}
       {renderFloatingField("email", "Email Address", "email", true)}
       {renderFloatingField("phone", "Phone Number", "tel", false)}
+      {renderFloatingField("projectName", "Project Name", "text", false)}
 
       <div className="mb-8">
         <p className="text-sm text-navy-100 font-medium mb-3">
@@ -103,6 +107,32 @@ export default function ContactClient() {
           ))}
         </div>
       </div>
+
+      <div className="mb-8">
+        <p className="text-sm text-navy-100 font-medium mb-3">
+          Design Theme
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {DESIGN_THEMES.map((theme) => (
+            <button
+              key={theme}
+              type="button"
+              onClick={() =>
+                setForm((prev) => ({ ...prev, designTheme: theme }))
+              }
+              className={`px-4 py-2 rounded-full text-sm font-medium border-2 transition-all cursor-pointer ${
+                form.designTheme === theme
+                  ? "border-primary bg-primary text-white"
+                  : "border-gray-200 text-navy-100 hover:border-primary-300"
+              }`}
+            >
+              {theme}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {renderFloatingField("budget", "Budget (RM)", "text", false)}
 
       <div className="relative mb-10">
         <label

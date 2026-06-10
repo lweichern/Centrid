@@ -167,10 +167,6 @@ export default function ProjectDetailClient({ project, nextProject, prevProject 
               <p className="text-xs uppercase tracking-wider text-navy/40 mb-1">Category</p>
               <p className="text-sm font-medium text-navy">{project.category}</p>
             </div>
-            <div>
-              <p className="text-xs uppercase tracking-wider text-navy/40 mb-1">Year</p>
-              <p className="text-sm font-medium text-navy">{project.year}</p>
-            </div>
             {project.sqft && (
               <div>
                 <p className="text-xs uppercase tracking-wider text-navy/40 mb-1">Size</p>

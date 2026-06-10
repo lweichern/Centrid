@@ -78,8 +78,8 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             </h2>
 
             <p className="text-navy-100 text-sm mt-2">
-              {project.location} &middot; {project.year} &middot;{" "}
-              {project.sqft} sqft
+              {project.location} &middot; {project.year} &middot; {project.sqft}{" "}
+              sqft
             </p>
 
             <p className="text-navy-100 leading-relaxed mt-6">
@@ -101,7 +101,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     >
                       <path
                         d="M13.333 4L6 11.333 2.667 8"
-                        stroke="#2873C3"
+                        stroke="#131a2d"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -116,7 +116,17 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             {project.category === "Kitchen" && (
               <div className="mt-8 p-5 rounded-xl bg-primary-50 border border-primary-100">
                 <div className="flex items-center gap-2 mb-2">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="text-primary"
+                  >
                     <path d="M12 2L3 7V12C3 17.25 6.88 22.13 12 23.25C17.12 22.13 21 17.25 21 12V7L12 2Z" />
                     <path d="M9 12L11 14L15 10" />
                   </svg>
@@ -125,17 +135,16 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                   </span>
                 </div>
                 <p className="text-navy-100 text-sm leading-relaxed">
-                  This project was built in partnership with Signature Kitchen — Malaysia&apos;s
-                  largest kitchen manufacturer since 1994. Premium materials, smart storage,
-                  and backed by a 10-year warranty.
+                  This project was built in partnership with Signature Kitchen —
+                  Malaysia&apos;s largest kitchen manufacturer since 1994.
+                  Premium materials, smart storage, and backed by a 10-year
+                  warranty.
                 </p>
               </div>
             )}
 
             <div className="mt-8 pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-              <p className="text-navy-100">
-                Interested in a similar project?
-              </p>
+              <p className="text-navy-100">Interested in a similar project?</p>
               <MagneticButton href="/contact" size="sm">
                 Get in Touch
               </MagneticButton>

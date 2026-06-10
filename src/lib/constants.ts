@@ -5,13 +5,13 @@ export const SITE_DESCRIPTION =
 
 export const CONTACT = {
   phone: "+60 12-393 7345",
-  email: "simonsiew79@gmail.com",
+  email: "simonsiew.centridhub@gmail.com",
   address: "Lot 24, Jalan Teknologi, Taman Sains, Selangor 1, PJU 5 Kota Damansara, 47810 Petaling Jaya, Selangor",
   whatsapp: "https://wa.me/60123937345",
   facebook: "https://www.facebook.com/profile.php?id=61580293599280",
   instagram: "https://www.instagram.com/centrid.design",
   workingHours: {
-    weekday: "Mon - Fri: 9:00 AM - 6:00 PM",
+    weekday: "Mon - Fri: 10:00 AM - 6:00 PM",
     saturday: "Sat: 10:00 AM - 2:00 PM",
     sunday: "Sun: Closed",
   },
@@ -30,6 +30,20 @@ export const PROJECT_TYPES = [
   "Kitchen",
   "Other",
 ] as const;
+
+export const DESIGN_THEMES = [
+  "Muji",
+  "Modern",
+  "Cream",
+  "Luxury",
+  "Others",
+] as const;
+
+export const COMPANY_INFO = {
+  name: "Centrid Design Sdn Bhd",
+  tin: "C25940831100",
+  msic: "74101",
+} as const;
 
 export const ANIMATION = {
   duration: 0.6,

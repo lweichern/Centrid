@@ -1,21 +1,21 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary-50: #EEF4FB;
-  --color-primary-100: #D4E4F5;
-  --color-primary-200: #A9C9EB;
-  --color-primary-300: #6FA5DB;
-  --color-primary-400: #488CCF;
-  --color-primary: #2873C3;
-  --color-primary-600: #2060A8;
-  --color-primary-700: #194D8D;
-  --color-primary-800: #133B72;
+  --color-primary-50: #eef4fb;
+  --color-primary-100: #d4e4f5;
+  --color-primary-200: #a9c9eb;
+  --color-primary-300: #6fa5db;
+  --color-primary-400: #488ccf;
+  --color-primary: #2873c3;
+  --color-primary-600: #2060a8;
+  --color-primary-700: #194d8d;
+  --color-primary-800: #133b72;
 
-  --color-navy: #234665;
-  --color-navy-50: #2D5578;
-  --color-navy-100: #5A7F9A;
+  --color-navy: #131a2d;
+  --color-navy-50: #2d5578;
+  --color-navy-100: #5a7f9a;
 
-  --color-cream: #FAFBFF;
+  --color-cream: #fafbff;
 
   --font-serif: "DM Serif Display", Georgia, serif;
   --font-sans: "Inter", system-ui, sans-serif;
@@ -39,21 +39,47 @@ body {
 }
 
 @keyframes pulse-whatsapp {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-  50% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+  }
 }
 
 @keyframes grain {
-  0%, 100% { transform: translate(0, 0); }
-  10% { transform: translate(-5%, -10%); }
-  20% { transform: translate(-15%, 5%); }
-  30% { transform: translate(7%, -25%); }
-  40% { transform: translate(-5%, 25%); }
-  50% { transform: translate(-15%, 10%); }
-  60% { transform: translate(15%, 0%); }
-  70% { transform: translate(0%, 15%); }
-  80% { transform: translate(3%, 35%); }
-  90% { transform: translate(-10%, 10%); }
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
 }
 
 .noise-overlay::before {
@@ -69,7 +95,11 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-700));
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-700)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

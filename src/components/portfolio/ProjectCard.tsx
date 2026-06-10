@@ -30,7 +30,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <p className="text-sm text-white/70">
             {project.category} &middot; {project.location}
           </p>
-          <p className="text-sm text-white/50">{project.year}</p>
           <p className="text-primary-300 text-sm font-medium mt-2 transition-all duration-300 translate-y-2.5 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
             View Project &rarr;
           </p>
