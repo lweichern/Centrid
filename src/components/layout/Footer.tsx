@@ -93,7 +93,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} {SITE_NAME}. All rights reserved.
+            &copy; {new Date().getFullYear()} {COMPANY_INFO.name}. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
