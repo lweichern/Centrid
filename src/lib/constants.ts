@@ -40,7 +40,7 @@ export const DESIGN_THEMES = [
 ] as const;
 
 export const COMPANY_INFO = {
-  name: "Centrid Design Sdn Bhd",
+  name: "Centrid Design Sdn. Bhd (1324114-W)",
   tin: "C25940831100",
   msic: "74101",
 } as const;
